@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="advanced_search_styles.css">
+    <title>Advanced Search</title>
+</head>    
+
+<body>
+    <div class="container">
+        <nav class="nav_bar">
+            <div class="left">
+                <img class="google_logo" src="https://www.edigitalagency.com.au/wp-content/uploads/small-google-logo-png-transparent-background-600x200.png" alt="google logo">  
+                <p class="nav_text">Advanced Search</p>
+            </div>
+
+            <div class="right">
+                <a href="index.html" target="_blank" ><p class="pline">Google Search</p></a>
+                <a href="image_search.html" target="_blank"><p class="pline">Image Search</p></a>
+            </div>
+        </nav>
+        
+        <hr>
+
+        <main>
+            <form action="https://google.com/search" name="f">
+                <div class="columns">
+                    <div class="col_1">
+                        <label class="field find" for="blank">Find pages with...</label>
+                        <label class="field" for="field1">all these words:</label>
+                        <label class="field" for="field2">this exact word or phrase: </label>
+                        <label class="field" for="field3">any of this words: </label>
+                        <label class="field" for="field4">none of these words: </label>
+                        <label class="field" for="field5">numbers ranging from: </label>
+                    </div>
+
+                    <div class="col_2">
+                        <div class="blank"></div>
+                        <input type="text" class="textinput" id="field1" value=""  name="as_q">
+                        <input type="text" class="textinput" id="field2" value=""  name="as_epq">
+                        <input type="text" class="textinput" id="field3" value=""  name="as_oq">
+                        <input type="text" class="textinput" id="field4" value=""  name="as_eq">
+                        <div class="range">
+                            <input type="text" class="textinput1" id="field5" value=""  name="as_nlo">
+                            <span class="seperator">to</span>
+                            <input type="text" class="textinput2" id="field5" value=""  name="as_nhi">
+                        </div>
+                    </div>
+                    
+                    <div class="col_3">
+                        <label class="find">To do this in the search box</label>
+                        <label class="fieldp" for="field1">Type the important words:  tricolor rat terrier</label>
+                        <label class="fieldp" for="field2">Put exact words in quotes:  "rat terrier"</label>
+                        <label class="fieldp" for="field3">Type OR between all the words you want:  miniature OR standard</label>
+                        <label class="fieldp" for="field4">Put a minus sign just before words you don't want:  -rodent, -"Jack Russell"</label>
+                        <label class="fieldp" for="field5">Put 2 periods between the numbers and add a unit of measure: 10..35 lb, $300..$500, 2010..2011</label>
+                    </div>
+                </div>
+                <div  class="submit"> <input type="submit" value="Advanced Search"> </div>
+            </form>
+        </main>
+        </div>
+        
+    </div>
+    <footer>
+
+    </footer>
+</body>
+</html>
